@@ -22,7 +22,7 @@ namespace HrManagejjmentSystem
                 Console.WriteLine("==========================================Welcome To HR Management System==============================================\n");
                 Console.ForegroundColor = ConsoleColor.Gray;
                 Console.BackgroundColor = ConsoleColor.Black;
-                Console.WriteLine("\t\t\t\t1. Add Employee\n \t\t\t\t2. Delete Employee\n \t\t\t\t3. Update details of  Employee\n \t\t\t\t4. Search employees by name / id / department\n \t\t\t\t5.Search the list of employee for the given department\n \t\t\t\t6.Count of Employee Department Wise\n ");
+                Console.WriteLine("\t\t\t\t1. Add Employee\n \t\t\t\t2. Delete Employee\n \t\t\t\t3. Update details of  Employee\n \t\t\t\t4. Search employees by name / id / department\n \t\t\t\t5. Search the list of employee for the given department\n \t\t\t\t6. Count of Employee Department Wise\n ");
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("\t\t\t\tPlease enter your choice\t\t\t\t\t");
                 int choice = Convert.ToInt32(Console.ReadLine());
