@@ -25,28 +25,52 @@ namespace HrManagejjmentSystem
                 Console.WriteLine("\t\t\t\t1. Add Employee\n \t\t\t\t2. Delete Employee\n \t\t\t\t3. Update details of  Employee\n \t\t\t\t4. Search employees by name / id / department\n \t\t\t\t5.Search the list of employee for the given department\n \t\t\t\t6.Count of Employee Department Wise\n ");
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("\t\t\t\tPlease enter your choice");
-                int choice =Convert.ToInt32(Console.ReadLine());
+                int choice = Convert.ToInt32(Console.ReadLine());
                 int id ;
+                string dep;
+
                 switch (choice)
                 {
                     case 1:
-                        Class1.add();
+                       
+                        string Employee, role, emailid, mobileno;
+                        Console.WriteLine("enter id Employee dep role emailid mobileno");
+                        id =Convert.ToInt32(Console.ReadLine()); 
+                        Employee = Console.ReadLine();
+                        dep = Console.ReadLine();
+                        role = Console.ReadLine();
+                        emailid = Console.ReadLine();
+                        mobileno = Console.ReadLine();
+
+                        Class1.add(id,Employee, dep, role, emailid, mobileno);
+                        
                         break;
+
+
                     case 2:
+                        Console.WriteLine("Enter Employee Id");
                         id = Convert.ToInt32(Console.ReadLine());
                         Class1.delete(id);
                         break;
+
+
                     case 3:
                         id = Convert.ToInt32(Console.ReadLine());
                         Class1.update(id);
                        
                         break;
+
+
                     case 4:
                         id = Convert.ToInt32(Console.ReadLine());
-                        Class1.searchbyid(id);
+                        Class1.search();
                         break;
+
+
                     case 5:
-                        Class1.list();
+                        Console.WriteLine("Enter Department");
+                        dep = Console.ReadLine();
+                        Class1.list(dep);
                         break;
 
                     case 6:
