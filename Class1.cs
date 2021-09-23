@@ -153,7 +153,7 @@ namespace HRM
 
         public static void SEARCH()
         {
-            Console.WriteLine("1.Search by id\n 2. Search by name\n 3.Search by department");
+            Console.WriteLine(" 1.Search by id\n 2.Search by name\n 3.Search by department");
             int Choice = Convert.ToInt32(Console.ReadLine());
             switch (Choice)
             {
@@ -174,7 +174,7 @@ namespace HRM
                     Console.WriteLine("id\t Employee\t Department\t\t Role\t\t EmailID\t\t\t Mobileno.\n ");
                     while (dr.Read())
                     {
-                        Console.WriteLine("{0}\t{1}\t\t{2}\t{3}\t{4}\t{5}\n", dr[0], dr[1], dr[2], dr[3], dr[4], dr[5]);
+                        Console.WriteLine("{0}\t{1}\t\t{2}\t\t{3}\t\t{4}\t\t{5}\n", dr[0], dr[1], dr[2], dr[3], dr[4], dr[5]);
 
                     }
                     con.Close();
@@ -198,7 +198,7 @@ namespace HRM
                     Console.WriteLine("id\t Employee\t Department\t\t Role\t\t EmailID\t\t\t Mobileno.\n ");
                     while (dr.Read())
                     {
-                        Console.WriteLine("{0}\t{1}\t\t{2}\t{3}\t{4}\t{5}\n", dr[0], dr[1], dr[2], dr[3], dr[4], dr[5]);
+                        Console.WriteLine("{0}\t{1}\t\t{2}\t\t{3}\t\t{4}\t\t{5}\n", dr[0], dr[1], dr[2], dr[3], dr[4], dr[5]);
 
                     }
                     con.Close();
@@ -221,7 +221,7 @@ namespace HRM
                     Console.WriteLine("id\t Employee\t Department\t\t Role\t\t EmailID\t\t\t Mobileno.\n ");
                     while (dr.Read())
                     {
-                        Console.WriteLine("{0}\t{1}\t\t{2}\t{3}\t{4}\t{5}\n", dr[0], dr[1], dr[2], dr[3], dr[4], dr[5]);
+                        Console.WriteLine("{0}\t{1}\t\t{2}\t\t{3}\t\t{4}\t\t{5}\n", dr[0], dr[1], dr[2], dr[3], dr[4], dr[5]);
 
                     }
                     con.Close();
@@ -268,14 +268,14 @@ namespace HRM
             con.Open();
 
 
-            string query = "select  Department, Count(*) from Empdetails group by department order by department";
+            string query = "select  Department, Count(*) from Empdetails group by department order by department desc";
 
             cmd = new SqlCommand(query, con);
             dr = cmd.ExecuteReader();
-            Console.WriteLine("Department\tCount of Employee ");
+            Console.WriteLine("Department\t\tCount of Employee ");
             while (dr.Read())
             {
-                Console.WriteLine("{0}\t\t{1}\n",dr[0],dr[1]);
+                Console.WriteLine("{0}\t\t{1}",dr[0],dr[1]);
             
             }
             con.Close();

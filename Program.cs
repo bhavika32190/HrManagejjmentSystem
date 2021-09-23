@@ -10,6 +10,11 @@ namespace HrManagejjmentSystem
 
             
             string username,password;
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.BackgroundColor = ConsoleColor.Gray;
+            Console.WriteLine("==========================================Welcome To HR Management System==============================================\n");
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.BackgroundColor = ConsoleColor.Black;
             Console.WriteLine("Hello");
             Console.WriteLine("Please enter id and password");
             username = Console.ReadLine();
@@ -19,7 +24,7 @@ namespace HrManagejjmentSystem
                 
                 Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.BackgroundColor = ConsoleColor.Gray;
-                Console.WriteLine("==========================================Welcome To HR Management System==============================================\n");
+                Console.WriteLine("===============================================Enter Your Choice========================================================\n");
                 Console.ForegroundColor = ConsoleColor.Gray;
                 Console.BackgroundColor = ConsoleColor.Black;
                 String Continue = "yes";
@@ -33,7 +38,7 @@ namespace HrManagejjmentSystem
                 string dep;
                 Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.BackgroundColor = ConsoleColor.Gray;
-                Console.WriteLine("******************************************************************************************************************");
+                Console.WriteLine("**********************************************************************************************************************");
                 Console.ForegroundColor = ConsoleColor.Gray;
                 Console.BackgroundColor = ConsoleColor.Black;
             
@@ -96,7 +101,7 @@ namespace HrManagejjmentSystem
 
                     Console.ForegroundColor = ConsoleColor.DarkRed;
                     Console.BackgroundColor = ConsoleColor.Gray;
-                    Console.WriteLine("******************************************************************************************************************");
+                    Console.WriteLine("*********************************************************************************************************************");
                     Console.ForegroundColor = ConsoleColor.Gray;
                     Console.BackgroundColor = ConsoleColor.Black;
 
