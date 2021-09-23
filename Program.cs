@@ -106,7 +106,7 @@ namespace HrManagejjmentSystem
                     Console.BackgroundColor = ConsoleColor.Black;
 
 
-                    Console.WriteLine("Want to continue?");
+                    Console.WriteLine("Want To Continue?");
                     Continue = Console.ReadLine();
                 }
 
